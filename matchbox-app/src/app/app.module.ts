@@ -9,6 +9,8 @@ import { from } from 'rxjs';
 import { HomeModule } from './home/home.module';
 import { CardComponent } from './card/card.component';
 
+import { MatCardModule } from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { CardComponent } from './card/card.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HomeModule 
+    HomeModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
