@@ -1,0 +1,21 @@
+$white: #FFFFFF;
+$black: #000000;
+
+.logo-home {
+    img {
+        max-width: 135px;
+    }
+}
+
+.title-home {
+    height: 43px;
+    width: 282px;
+    background: $white;
+    
+    h2 {
+        color: $black;
+        text-align: center;
+        font-weight: bolder;
+        padding-top: 5px;
+    } 
+}
