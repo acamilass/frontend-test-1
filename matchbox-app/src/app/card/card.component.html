@@ -4,13 +4,14 @@
         <div class="card-position" *ngFor="let data of arrayData">
            
             <div class="person-picture"> 
-                <img src="{{ data. picture}}" alt="Profile picture">                
-            </div>
-
-            <!-- <div class="position-number"></div> -->
+                <img src="{{ data. picture}}" alt="Profile picture">    
+                <div class="position-number">
+                    <h5>1</h5>
+                </div>            
+            </div>          
             
             <div class="person-info">
-                <h3>{{ data.name }}</h3>
+                <h3>{{ data.name.split(' ', 2).join(' ') }}</h3>
                 <h5>{{ data.description }}</h5>
             </div>
 
