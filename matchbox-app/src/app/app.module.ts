@@ -6,24 +6,28 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { from } from 'rxjs';
 
-import { HomeModule } from './home/home.module';
+import { TooltipComponent } from './tooltip/tooltip.component';
 import { CardComponent } from './card/card.component';
 
+import { HomeModule } from './home/home.module';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
+import { TooltipModule } from './tooltip/tooltip.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    TooltipComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HomeModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    TooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
