@@ -1,12 +1,17 @@
 <div class="card">
     <mat-card>
 
-        <div class="card-position">
-            <div class="person-picture"></div>
-            <div class="person-info">
-                <h3>Ana Camila</h3>
-                <h5>Front-end Developer</h5>
+        <div class="card-position" *ngFor="let data of arrayData">
+           
+            <div class="person-picture"> 
+                <img src="{{ data. picture}}" alt="Profile picture"> 
             </div>
+            
+            <div class="person-info">
+                <h3>{{ data.name }}</h3>
+                <h5>{{ data.description }}</h5>
+            </div>
+
         </div>
 
     </mat-card>

@@ -1,7 +1,8 @@
 $blue: #6CBDF2;
+$gray: #A8A8A8;
 
 .card {
-    width: 282px;
+    width: 342px;
     margin-top: 12px;
     
     .card-position {
@@ -10,18 +11,20 @@ $blue: #6CBDF2;
         font-family: 'Montserrat', sans-serif;
 
         .person-picture {
-            width: 55px;
-            height: 55px;
-            background: #000;
-            border-radius: 50%;
-            border: 3px solid $blue;
+            img {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                border: 3px solid $blue;
+            }
+            
         }
 
         .person-info {
             margin-left: 20px;
 
             h5 {
-                color: gray;
+                color: $gray;
                 margin-top: -18px;
             }
         }
