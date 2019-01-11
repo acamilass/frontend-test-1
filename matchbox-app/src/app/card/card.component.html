@@ -6,7 +6,7 @@
             <div class="person-picture"> 
                 <img src="{{ data.picture }}" alt="Profile picture">    
                 <div class="position-number">
-                    <h5>{{ itemIndex }}</h5>
+                    <h5>{{ newArray.position }}</h5>
                 </div>            
             </div>          
             
@@ -15,7 +15,7 @@
                 <h5>{{ data.description }}</h5>
             </div>
 
-            <app-tooltip></app-tooltip>
+            <app-tooltip *ngFor="let item of newArray" [positive]="item.positive" [negative]="item.negative"></app-tooltip>
        
         </div>
 

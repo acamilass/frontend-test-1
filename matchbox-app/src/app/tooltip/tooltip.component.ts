@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
 
@@ -8,6 +8,9 @@ import { HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./tooltip.component.scss']
 })
 export class TooltipComponent implements OnInit {
+
+  @Input() negative: number;
+  @Input() positive: number;
 
   arrayData: any [];
   totalRate: number;

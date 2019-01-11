@@ -24,7 +24,7 @@ $white: #FFFFFF;
         position: absolute;
         width: 1px;
         height: 55px;
-        left: 68px;
+        left: 70px;
         z-index: 1;
         background: black;
     }
@@ -42,6 +42,10 @@ $white: #FFFFFF;
             font-weight: bold;
             padding-left: 17px;
             z-index: 1;
+
+            &:nth-child(2) {
+                padding: 25px;
+            }
         }
     }
 
@@ -49,10 +53,14 @@ $white: #FFFFFF;
         display: flex;
         padding-top: 2px;
         z-index: 2;
-
+                
         h2 {
             padding-left: 20px;
             color: $dark-gray;
+
+            &:nth-child(2) {
+                padding-left: 35px;
+            }
         }
     }
 }
