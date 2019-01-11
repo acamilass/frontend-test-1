@@ -1,27 +1,27 @@
-# MatchboxApp
+# Teste Front-end Matchbox Brasil
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
+### Metodologia 
+> **Padrão:** Angular 6
 
-## Development server
+> **Frameworks:** Angular 6, Angular Material
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> **Instalação de pacotes:** npm install
 
-## Code scaffolding
+> **Desenvolvedor:** Ana Camila Santos Sousa
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Executando o projeto localmente
 
-## Build
+**Requisitos:** A ferramenta Node deve estar instalada
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+##### Passos
 
-## Running unit tests
+Através do terminal clone o projeto
+>> git clone https://github.com/acamilass/frontend-test-1.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Na pasta baixe os pacotes
+>> npm install
 
-## Running end-to-end tests
+Para executar localmente e testar, use o seguinte comando
+>> npm start
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Agora você pode testar a sua aplicação através do endereço [http://localhost:4200](http://localhost:4200)
