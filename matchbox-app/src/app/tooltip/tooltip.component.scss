@@ -4,16 +4,16 @@ $red: #DF595E;
 $white: #FFFFFF;
 
 .tooltip {
-    width: 140px;
+    width: 160px;
     height: 55px;
     background: $gray;
-    border-radius: 3px;
+    border-radius: 5px;
 
     .tooltip-detail {
         position: absolute;
         height: 50px;
         width: 50px;
-        left: -1px;
+        left: -10px;
         background: $gray;
         z-index: 0;
         -webkit-clip-path: polygon(35% 35%, 0 52%, 35% 69%);
@@ -31,16 +31,16 @@ $white: #FFFFFF;
 
     .tooltip-header {
         position: absolute;
-        width: 140px;
+        width: 160px;
         height: 20px;
         background: $red;
-        border-radius: 3px 3px 0 0;
+        border-radius: 5px 5px 0 0;
 
         span {
             color: $white;
             font-size: 9px;
             font-weight: bold;
-            padding-left: 14px;
+            padding-left: 17px;
             z-index: 1;
         }
     }

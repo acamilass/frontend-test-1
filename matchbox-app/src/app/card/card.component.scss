@@ -13,13 +13,14 @@ $white: #FFFFFF;
     mat-card {
         padding: 0;
     }        
-    
+  
     .card-position {
         display: flex;
         align-items: center;
         font-family: 'Montserrat', sans-serif;
         max-height: 82px;
         padding: 15px 15px 0 15px;
+        z-index: 0;
 
         &:nth-child(even) {
             background-color: $light-gray;
@@ -43,6 +44,17 @@ $white: #FFFFFF;
                 color: $black;
             }
             
+        }
+
+        app-tooltip {
+            display: none;
+        }
+    
+        &:hover app-tooltip {
+            position: absolute;
+            display: flex;
+            right: -180px;
+            z-index: 1;
         }
 
         .person-picture {            

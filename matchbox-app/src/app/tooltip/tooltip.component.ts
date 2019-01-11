@@ -9,11 +9,12 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class TooltipComponent implements OnInit {
 
-  constructor(private httpService: HttpClient) { }
   arrayData: any [];
   totalRate: number;
   negativeRate: number [];
   positiveRate: number [];
+
+  constructor(private httpService: HttpClient) { }
 
   ngOnInit() {
     this.httpService.get('assets/matchboxbrasil.json').subscribe(data => {
@@ -26,9 +27,6 @@ export class TooltipComponent implements OnInit {
     this.negativeRate = this.arrayData.map(e => Math.round((e.negative * 100) / this.totalRate));
 
     this.positiveRate = this.arrayData.map(e => Math.round((e.positive * 100) / this.totalRate));
-
-    console.log(this.negativeRate);
-    console.log(this.positiveRate);
 
     },
     (err: HttpErrorResponse) => {
